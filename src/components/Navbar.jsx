@@ -32,7 +32,7 @@ const Navbar = () => {
         <nav
             className={cn(
                 'fixed top-0 w-full z-50 transition-all duration-300 h-20 flex items-center',
-                isScrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md'
+                (isScrolled || isOpen) ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md'
             )}
         >
             <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">

@@ -7,10 +7,10 @@ import ReviewCard from '../components/ReviewCard';
 
 const Home = () => {
     const featuredProducts = [
-        { id: 1, name: "iPhone 15 Pro", brand: "Apple", price: "₹1,24,900", stockStatus: "In Stock", image: "https://images.unsplash.com/photo-1695048133142-1a20484d25fa?auto=format&fit=crop&q=80&w=800", specs: { processor: "A17 Pro", camera: "48MP", battery: "24h+", display: "6.1\" OLED" } },
-        { id: 2, name: "Galaxy S24 Ultra", brand: "Samsung", price: "₹1,29,999", stockStatus: "In Stock", image: "https://images.unsplash.com/photo-1707153123306-381f2117565c?auto=format&fit=crop&q=80&w=800", specs: { processor: "SD 8 Gen 3", camera: "200MP", battery: "5000mAh", display: "6.8\" AMOLED" } },
-        { id: 3, name: "Xiaomi 14", brand: "Xiaomi", price: "₹69,999", stockStatus: "In Stock", image: "https://images.unsplash.com/photo-1709664551100-3306236bb56e?auto=format&fit=crop&q=80&w=800", specs: { processor: "SD 8 Gen 3", camera: "Leica 50MP", battery: "4610mAh", display: "6.36\" LTPO" } },
-        { id: 4, name: "OnePlus 12", brand: "OnePlus", price: "₹64,999", stockStatus: "In Stock", image: "https://images.unsplash.com/photo-1706175440798-23acc1bc2100?auto=format&fit=crop&q=80&w=800", specs: { processor: "SD 8 Gen 3", camera: "Hasselblad 50MP", battery: "5400mAh", display: "6.82\" 2K" } },
+        { id: 1, name: "iPhone 15 Pro", brand: "Apple", price: "₹1,24,900", stockStatus: "In Stock", image: "/images/11.jpg", specs: { processor: "A17 Pro", camera: "48MP", battery: "24h+", display: "6.1\" OLED" } },
+        { id: 2, name: "Galaxy S24 Ultra", brand: "Samsung", price: "₹1,29,999", stockStatus: "In Stock", image: "/images/22.jpg", specs: { processor: "SD 8 Gen 3", camera: "200MP", battery: "5000mAh", display: "6.8\" AMOLED" } },
+        { id: 3, name: "Xiaomi 14", brand: "Xiaomi", price: "₹69,999", stockStatus: "In Stock", image: "/images/33.jpg", specs: { processor: "SD 8 Gen 3", camera: "Leica 50MP", battery: "4610mAh", display: "6.36\" LTPO" } },
+        { id: 4, name: "OnePlus 12", brand: "OnePlus", price: "₹64,999", stockStatus: "In Stock", image: "/images/11.jpg", specs: { processor: "SD 8 Gen 3", camera: "Hasselblad 50MP", battery: "5400mAh", display: "6.82\" 2K" } },
     ];
 
     const services = [

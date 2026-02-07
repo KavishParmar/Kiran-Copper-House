@@ -8,18 +8,22 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const images = [
-        { id: 1, category: 'Our Shop', title: 'Shop Interior', detail: 'Modern display shelves', url: "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=1200" },
-        { id: 2, category: 'New Arrivals', title: 'iPhone 15 Series', detail: 'Latest flagship unboxing', url: "https://images.unsplash.com/photo-1695048133142-1a20484d25fa?auto=format&fit=crop&q=80&w=1200" },
-        { id: 3, category: 'Customers', title: 'Happy Client', detail: 'Customer receiving new device', url: "https://images.unsplash.com/photo-1512428559083-a40ce9033f56?auto=format&fit=crop&q=80&w=1200" },
-        { id: 4, category: 'Repairs', title: 'Screen Fix', detail: 'Precision screen replacement', url: "https://images.unsplash.com/photo-1597740985671-2a8a3b80ec0f?auto=format&fit=crop&q=80&w=1200" },
-        { id: 5, category: 'Our Shop', title: 'Ambiance', detail: 'Shop storefront', url: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200" },
-        { id: 6, category: 'New Arrivals', title: 'Samsung Galaxy S24', detail: 'New release display', url: "https://images.unsplash.com/photo-1707153123891-2ca3c1bc2100?auto=format&fit=crop&q=80&w=1200" },
-        { id: 7, category: 'Customers', title: 'Family Purchase', detail: 'First smartphone setup', url: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1200" },
-        { id: 8, category: 'Repairs', title: 'Battery Service', detail: 'Quick battery change', url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1200" },
-        { id: 9, category: 'Our Shop', title: 'Service Counter', detail: 'Dedicated help desk', url: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1200" },
-        { id: 10, category: 'New Arrivals', title: 'OnePlus 12', detail: 'Flagship showcase', url: "https://images.unsplash.com/photo-1706175440798-23acc1bc2100?auto=format&fit=crop&q=80&w=1200" },
-        { id: 11, category: 'Customers', title: 'Tech Enthusiast', detail: 'Gaming phone delivery', url: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200" },
-        { id: 12, category: 'Repairs', title: 'Clean Setup', detail: 'Organized repair station', url: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=1200" },
+        { id: 1, category: 'Repairs', title: 'Expert Screen Fix', detail: 'Precision screen replacement', url: "/images/1.jpg" },
+        { id: 2, category: 'New Arrivals', title: 'iPhone 15 Series', detail: 'Latest flagship unboxing', url: "/images/11.jpg" },
+        { id: 3, category: 'Customers', title: 'Happy Client', detail: 'Customer receiving new device', url: "/images/7.jpg" },
+        { id: 4, category: 'Repairs', title: 'Board Repair', detail: 'Advanced chip-level repair', url: "/images/2.jpg" },
+        { id: 5, category: 'Our Shop', title: 'Kiran Copper House', detail: 'Our main storefront', url: "/images/logo.jpg" },
+        { id: 6, category: 'New Arrivals', title: 'Premium Mobile', detail: 'Newly arrived smartphone', url: "/images/22.jpg" },
+        { id: 7, category: 'Customers', title: 'Trusted Choice', detail: 'Community trust in Rajgarh', url: "/images/8.jpg" },
+        { id: 8, category: 'Repairs', title: 'Battery Service', detail: 'Quick battery change', url: "/images/3.jpg" },
+        { id: 9, category: 'Our Shop', title: 'Display Area', detail: 'Latest mobile showcase', url: "/images/5.jpg" },
+        { id: 10, category: 'New Arrivals', title: 'Smart Accessories', detail: 'Latest tech arrivals', url: "/images/33.jpg" },
+        { id: 11, category: 'Customers', title: 'Meet the Owner', detail: 'Lucky Jain - Tech Expert', url: "/images/owner.png" },
+        { id: 12, category: 'Repairs', title: 'Charging Port Fix', detail: 'Quality replacement parts', url: "/images/4.jpg" },
+        { id: 13, category: 'Our Shop', title: 'Collection', detail: 'Wide range of products', url: "/images/6.jpg" },
+        { id: 14, category: 'New Arrivals', title: 'Flagship Edition', detail: 'Exclusive mobile launch', url: "/images/11.jpg" },
+        { id: 15, category: 'Customers', title: 'Tech Community', detail: 'Serving happy customers', url: "/images/9.jpg" },
+        { id: 16, category: 'Repairs', title: 'Diagnosis', detail: 'Thorough device checkup', url: "/images/1.jpg" },
     ];
 
     const filteredImages = activeTab === 'All' ? images : images.filter(img => img.category === activeTab);

@@ -27,7 +27,7 @@ const Services = () => {
             <section className="relative py-24 overflow-hidden bg-slate-900 text-white">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1597740985671-2a8a3b80ec0f?auto=format&fit=crop&q=80&w=2000"
+                        src="/images/1.jpg"
                         alt="Mobile Shop Background"
                         className="w-full h-full object-cover opacity-40"
                     />
