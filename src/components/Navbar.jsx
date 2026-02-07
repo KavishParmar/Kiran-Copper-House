@@ -110,10 +110,17 @@ const Navbar = () => {
             {/* Mobile Menu Overlay */}
             <div
                 className={cn(
-                    'fixed inset-0 bg-white z-40 lg:hidden transition-transform duration-300 pt-24 px-6',
+                    'fixed inset-0 bg-white z-[60] lg:hidden transition-transform duration-300 pt-24 px-6',
                     isOpen ? 'translate-x-0' : 'translate-x-full'
                 )}
             >
+                {/* Close Button Inside Overlay */}
+                <button
+                    className="absolute top-6 right-6 p-2 text-dark hover:text-primary transition-colors"
+                    onClick={() => setIsOpen(false)}
+                >
+                    <X size={32} />
+                </button>
                 <div className="flex flex-col gap-6">
                     {navLinks.map((link) => (
                         <Link
